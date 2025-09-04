@@ -308,7 +308,7 @@ router.get('/client', (req, res) => {
             const sig = data.signature || data.jwtSignature;
             if (!sig) throw new Error('Signature missing');
             ZoomMtg.init({
-              leaveUrl: 'https://zoom.us',
+              leaveUrl: 'shyamsironlineacademy.com',
               success: () => {
                 ZoomMtg.join({
                   signature: sig,
